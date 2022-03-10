@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>ALL THE BEST</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <link rel="stylesheet" href="./css/tether.min.css" />
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <link rel="stylesheet" href="./css/quiz.css" />
+
+  </head>
+  <body style="background: rgb(226 226 226 / 29%);">
+    <div class="container" id="resultbg">
+      <img src="./star4.png" id="starimg" />
+      <h2 id="RHeading">Test Analysis</h2>
+      
+      <div class="container" id="user">
+        <img src="./usericon.png" width="45px" height="40px" />
+        <span id="UN"></span>
+        <div id="useremail"></div>
+      </div>
+      
+      <div class="container overflow-hidden" id="score">
+
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3 border bg-light"><h5 style="color: rgba(103, 103, 104, 0.678);">SCORE</h5>
+             <br/>
+             <div class="tms" id="tms" style="color: black; font-size: 51px;">0</div>
+           </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="container overflow-hidden marks"></div>
+      <h5 id="overview">Overview</h5>
+      <h6 id="head">summary of marks scored in test...</h6>
+
+        <div class="row gx-5">
+
+          <div class="col">
+            <div class="p-3 border bg-light" id="fields"><h6>CORRECT ANSWERS</h6>
+              <br/>
+             <div class="ca" id="ca" style="color: green;">0</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="p-3 border bg-light" id="fields"><h6>INCORRECT ANSWERS</h6>
+              <br/>
+             <div class="ia" id="ia" style="color: red;">0</div>
+            </div>
+           </div>
+
+           <div class="col">
+            <div class="p-3 border bg-light" id="fields"><h6>MARKED FOR LATER</h6>
+              <br/>
+              <div class="mfl" id="mfl" style="color: goldenrod">0</div>
+            </div>
+           </div>
+ 
+
+            <div class="col">
+             <div class="p-3 border bg-light" id="fields"><h6>UNATTEMPTED QUESTIONS</h6>
+                <br/>
+                <div class="uq" id="uq" style="color: grey;">0</div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <br/>
+
+    <div class="container" id="resultbg2">
+
+      <h5 id="swanalysis">Subject-wise Analysis</h5>
+      <h6 id="swanalysis1">subject and topic-wise breakdown of your performance...</h6>
+
+      <table class="table" id="resTable">
+
+        <thead>
+          <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Marks Scored</th>
+            <th scope="col">Total Correct</th>
+            <th scope="col">Total Incorect</th>
+            <th scope="col">Not Attempted</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Physics</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>Chemistry</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>Biology</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+
+        </tbody>
+
+        <tfoot>
+
+          <tr>
+            <th scope="col" id="totalfooter">total</th>
+            <th scope="col" id="marksfooter">0</th>
+            <th scope="col" id="correctfooter">0</th>
+            <th scope="col" id="incorrectfooter">0</th>
+            <th scope="col" id="unattemptedfooter">0</th>
+
+          </tr>
+        </tfoot>
+      </table>
+
+      <center><img src="./congrats.gif" width="125px" /></center>
+    </div>
+    <div id="marginlast"><h6 style="visibility: hidden;">hello</h6></div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/quiz.js"> </script>
+  </body>
+</html>

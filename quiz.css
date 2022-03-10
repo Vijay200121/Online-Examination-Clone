@@ -1,0 +1,448 @@
+@font-face {
+    font-family: Quiz;
+    src: url('../monofonto.ttf');
+}
+
+
+html, body{
+    min-height: fit-content;
+    height: 630px !important;
+}
+
+body
+{
+    background-color: #bab6b6;
+}
+h1
+{
+    font-family: Quiz, sans-serif;
+    color: #f00d0d;
+    border: 2px solid;
+}
+
+
+
+
+#emailtext
+{
+    margin-top: 50px
+}
+
+#userAuthentication
+{
+    margin-top: 150px;
+}
+
+#startTest
+{
+    margin: 20px 0px 10px 10px;
+    border-radius: 70px;
+    background-color: rgb(114, 236, 57);
+}
+
+#startTest > h2
+{
+    font-size: 70px;
+}
+
+.table
+{
+    margin-top: 20px;
+}
+
+#rules
+{
+    margin-top: 50px;
+}
+
+#qbuttons
+{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px !important;
+    border-right: 2px solid;
+    padding-right: 10px !important;
+    height: fit-content;
+}
+
+.QBTN
+{
+    height: 40px !important;
+    padding: 7px !important;
+    background-color: rgb(169, 173, 171);
+    border-radius: 7px;
+}
+
+.indcTable
+{
+    margin-top: 0px;
+    transform: translate(0px, -840px);
+}
+
+.navbar
+{
+    transform: translate(250px, -600px);
+    height: 0px;
+    width: 1000px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#examtime
+{
+    margin-right: 17px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.navbar > .showSub > .btn-group > .btn
+{
+    padding-top: 1px;
+    width: 70px;
+    background: #3d77bb;
+}
+
+.showSub > .btn-group button.active
+{
+    background: #9ec5ff !important;
+}
+
+.showSub
+{
+    border: 1px solid #646668;
+    border-radius: 7px;
+    padding: 0px;
+    position: fixed;
+}
+
+.navbar > .showSub > .btn-group
+{
+    padding: 0px;
+}
+
+.showQn
+{
+    transform: translate(250px, -550px);
+    height: fit-content;
+    width: 1000px;
+    margin: 0px;
+    padding: 0px;
+    border-left: 2px solid #accefc;
+}
+
+#qbuttons button.active
+{
+    border:  2px solid !important;
+}
+
+#qbuttons button:hover
+{
+    border:  2px solid #646668 !important;
+}
+
+.questionNo
+{
+    transform: translate(250px, -550px);
+    height: fit-content;
+    width: 1000px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.overflow-scroll
+{
+    transform: translate(250px, -550px);
+    width: 1000px !important;
+    height: 275px !important;
+    border-left: 2px solid #accefc;
+}
+
+/*.overflow-auto
+{
+    transform: translate(250px, -550px);
+    width: 1000px;
+    margin-top: 20px;
+    padding: 0px;
+}*/
+
+.options
+{
+    transform: translate(250px, -550px);
+    width: 1000px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.options .btn
+{
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 20px;
+    background: #accefc;
+}
+
+/*.options button:hover
+{
+    background: #588cd4;
+}*/
+
+.clickbtns 
+{
+    transform: translate(257px, -570px);
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid
+{
+    width: 1000px;
+}
+
+.sanext
+{
+    width: 250px;
+    margin-right: 118px;
+    background: green;
+    border-radius: 7px !important;
+}
+
+.manext
+{
+    width: 250px;
+    margin-right: 118px;
+    background: yellow;
+    border-radius: 7px !important;
+}
+
+.endTest
+{
+    width: 250px;
+    background: rgb(189, 3, 3);
+    border-radius: 7px !important;
+}
+
+.clickbtns button:hover
+{
+    border: 2px solid #646668;
+}
+
+
+#snackbar, #snackbar1
+{
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 90%;
+    bottom: 30px;
+}
+
+#snackbar.show, #snackbar1.show
+{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 1.0s;
+}
+
+@-webkit-keyframes fadein 
+{
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@keyframes fadein 
+{
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@-webkit-keyframes fadeout 
+{
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+  
+@keyframes fadeout 
+{
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+#tickImg
+{
+    height: 30px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+#pqns
+{
+    transform: translate(-5px, -5px);
+}
+
+#cqns
+{
+    transform: translate(-5px, -441px);
+    visibility: hidden;
+}
+
+#bqns
+{
+    transform: translate(-5px, -877px);
+    visibility: hidden;
+}
+
+#mqns
+{
+    transform: translate(-5px, -1313px);
+    visibility: hidden;
+}
+
+.overflow-auto
+{
+    height: 450px !important;
+    width: 200px !important;
+}
+
+#resultbg
+{
+    width: 1200px;
+    height: 550px;
+    background: #fff;
+    margin-top: 75px;
+}
+
+#resultbg1
+{
+    width: 1200px;
+    height: 550px;
+    background: #fff;
+    margin-top: 25px;
+}
+
+#resultbg2
+{
+    width: 1200px;
+    height: fit-content;
+    background: #fff;
+    margin-top: 25px;
+
+}
+
+#starimg
+{
+    height: 80px;
+    width: 80px;
+    transform: translate(10px, 20px);
+}
+
+#RHeading
+{
+    transform: translate(100px, -40px);
+    font-size: 40px;
+    color: rgb(103, 103, 104);
+    width: fit-content;
+}
+
+#overview
+{
+    margin-top: 50px;
+    margin-left: 13px;
+    color: rgb(84, 84, 85);
+}
+
+#score
+{
+    margin-top: -60px;
+    width: fit-content;
+    padding-left: 0px;
+    margin-left: 7px;
+}
+
+#head
+{
+    margin-top: -8px;
+    margin-left: 13px;
+    font-size: 14px;
+    color: rgba(103, 103, 104, 0.822);
+}
+
+#fields
+{
+    color: rgba(103, 103, 104, 0.678);
+    position:absolute;
+}
+
+#mfl, #ca, #ia, #uq
+{
+    color: rgb(103, 103, 104);
+    font-size: 30px;
+    margin-top: -33px;
+}
+
+#tms
+{
+    color: rgb(103, 103, 104);
+    margin-top: -33px;
+}
+
+#swanalysis
+{
+    margin-left: 13px;
+    color: rgb(84, 84, 85);
+}
+
+#swanalysis1
+{
+    margin-top: -8px;
+    margin-left: 13px;
+    font-size: 14px;
+    color: rgba(103, 103, 104, 0.822);
+}
+
+#resTable
+{
+    margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#user
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    transform: translate(400px, -135px);
+}
+
+center
+{
+    margin-top: 100px;
+}
+
+#UN
+{
+    color: black;
+    font-size: 25px !important;
+}
+
+#useremail
+{
+    font-size: 15px;
+    color: rgb(84, 84, 85);
+    padding: 10px;
+    padding-top: 6px;
+}
+
+#marginlast
+{
+    margin-top: 25px;
+}

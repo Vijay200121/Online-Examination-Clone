@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>EXAM</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="./css/tether.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/quiz.css" />
+
+    </head>
+
+    <body style="background-image: url('./light-color-23.jpg');">
+
+        <h1><center>ONLINE PRACTICE TEST</center></h1>
+
+        <div class="container" id="userAuthentication">
+            <form action="intro2.html">
+                <div class="row g-3" id="nametext">
+                    <label  class="form-label">Name</label>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="InputFName" required>
+                    </div>
+                    <div class="col">
+                         <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="InputLName" required>
+                    </div>
+                </div>
+                <div class="mb-3" id="emailtext">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="Inputemail" aria-describedby="emailHelp" placeholder="email address" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">I agree Terms and conditions</label>
+                </div>
+                
+
+                <button onclick="getInput()" type="submit" id="savebutton" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+
+
+
+
+        <footer id="copyright">
+            <center>
+                &copy;vijaygaike
+            </center>
+        </footer>
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/tether.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/quiz.js"> </script>
+    </body>
+</html>
